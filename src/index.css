@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Long Shot';
+  src: url('../src/Components/Font/Long_Shot.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-main : Long Shot, sans-serif;
+}

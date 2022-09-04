@@ -1,0 +1,123 @@
+* {
+    margrin : 0;
+    padding: 0;
+}
+
+.container_h {
+    padding: 10px;
+    background-image: url("../Assets/OrangeBg2Size.png");
+    height: 1300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    font-family: var(--font-main);
+    padding: 5px;
+    font-size: 50px;
+    word-spacing: 1rem;
+}
+
+.tiltle_container_cd {
+    display: block;
+    word-spacing: 2rem;
+}
+
+.logo_h {
+    width: 300px;
+    height: 300px;
+}
+
+/* ---------- Button ---------- */
+
+/*
+.btn{
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    background-color: #AD9154;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    border:none;
+    outline:none;
+    font: 18px "Long Shot";
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    margin:20px;
+}
+ */
+/***** 1. Rotor ********/
+@-webkit-keyframes rotor{
+    from{ -webkit-transform: rotate(0deg); }
+    to{ -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotor{
+    from{ -moz-transform: rotate(0deg); }
+    to{ -moz-transform: rotate(360deg); }
+}
+@-o-keyframes rotor{
+    from{ -o-transform: rotate(0deg); }
+    to{ -o-transform: rotate(360deg); }
+}
+@keyframes rotor{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+.button-wrap-1 {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.clicker {
+    /* Inner circle */
+    width: 100px;
+    height: 100px; /* 20px smaller b/c of margin below */
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 60px;
+
+    /* Overlays this circle on the .circle */
+    z-index: 2;
+    position: absolute;
+
+    /* centers the text: adjust to desired size */
+    padding: 22px 10px;
+    text-align: center;
+
+    /* shadow */
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow:      0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+.circle {
+    /** outer circle **/
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+
+    /** image = wedge **/
+    background-image: linear-gradient(45deg,
+    white 0%,
+    white 30%,
+    rgb(20,190,235) 30%,
+    rgb(20,190,235) 70%,
+    white 70%,
+    white 100%);
+
+    /*** outer circle position: under */
+    z-index: 1;
+    position: absolute;
+}
+.clicker:hover + .circle, .clicker:active + .circle {
+    -webkit-animation: rotor 1.5s linear 0s infinite normal;
+    -mox-animation: rotor 1.5s linear 0s infinite normal;
+    -o-animation: rotor 1.5s linear 0s infinite normal;
+    animation: rotor 1.5s linear 0s infinite normal;
+}
+
+
