@@ -13,13 +13,13 @@ function Header() {
                 </div>
                 <h1 className="title">R E G I O N S</h1>
                 <img src={logo} class="logo_h" alt="logo"/>
+
             </div>
 
-            <div className="example-wrap">
-                <div className="button-wrap-1 example">
-                    <a href className="clicker">Boutique</a>
-                    <div className="circle"></div>
-                </div>
+            <div className="wrap">
+                <button className="button">Boutique</button>
+                <button className="button">Actus</button>
+
             </div>
 
         </div>

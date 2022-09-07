@@ -6,7 +6,7 @@
 .container_h {
     padding: 10px;
     background-image: url("../Assets/OrangeBg2Size.png");
-    height: 1300px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,14 +19,14 @@
     word-spacing: 1rem;
 }
 
-.tiltle_container_cd {
+.title_container_cd {
     display: block;
     word-spacing: 2rem;
 }
 
 .logo_h {
-    width: 300px;
-    height: 300px;
+    width: 225px;
+    height: 225px;
 }
 
 /* ---------- Button ---------- */
@@ -46,78 +46,93 @@
     margin:20px;
 }
  */
-/***** 1. Rotor ********/
-@-webkit-keyframes rotor{
-    from{ -webkit-transform: rotate(0deg); }
-    to{ -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes rotor{
-    from{ -moz-transform: rotate(0deg); }
-    to{ -moz-transform: rotate(360deg); }
-}
-@-o-keyframes rotor{
-    from{ -o-transform: rotate(0deg); }
-    to{ -o-transform: rotate(360deg); }
-}
-@keyframes rotor{
-    from{ transform: rotate(0deg); }
-    to{ transform: rotate(360deg); }
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.button-wrap-1 {
-    width: 120px;
-    height: 120px;
-    margin: 20px 0;
-    display: inline-block;
+.button {
+    min-width: 150px;
+    min-height: 150px;
+    font-family: 'Long Shot', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: white;
+    background: #AD9154;
+    background: linear-gradient(90deg,rgb(85 90 21 / 74%) 0%, rgba(75,90,21,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
     position: relative;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-left : 350px;
+    margin-right: 350px;
+;
 }
 
-.clicker {
-    /* Inner circle */
-    width: 100px;
-    height: 100px; /* 20px smaller b/c of margin below */
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 60px;
-
-    /* Overlays this circle on the .circle */
-    z-index: 2;
+button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(150px + 12px);
+    min-height: calc(150px + 12px);
+    border: 6px solid #AD9154;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
     position: absolute;
-
-    /* centers the text: adjust to desired size */
-    padding: 22px 10px;
-    text-align: center;
-
-    /* shadow */
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:    0px 0px 7px 0px rgba(0, 0, 0, 0.5);
-    -o-box-shadow:      0px 0px 7px 0px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+    z-index: -1;
 }
-.circle {
-    /** outer circle **/
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
 
-    /** image = wedge **/
-    background-image: linear-gradient(45deg,
-    white 0%,
-    white 30%,
-    rgb(20,190,235) 30%,
-    rgb(20,190,235) 70%,
-    white 70%,
-    white 100%);
+.button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
 
-    /*** outer circle position: under */
-    z-index: 1;
+button:hover::before, button:focus::before {
+    opacity: 1;
+}
+
+button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
     position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
 }
-.clicker:hover + .circle, .clicker:active + .circle {
-    -webkit-animation: rotor 1.5s linear 0s infinite normal;
-    -mox-animation: rotor 1.5s linear 0s infinite normal;
-    -o-animation: rotor 1.5s linear 0s infinite normal;
-    animation: rotor 1.5s linear 0s infinite normal;
+
+button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
 }
 
 
