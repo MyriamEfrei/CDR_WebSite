@@ -1,33 +1,20 @@
-html
-import "./Shop.css";
-import logoCDR from "../Assets/LogoDiscord.png";
-//import { link } from 'react-router-dom';
+import "./Tee-shirt.css";
 import Footer from "../Footer/Footer";
 import {Link} from "react-router-dom";
 import logo from "../Assets/LogoDiscord.png";
+import tee_coc from "./pull-coc.jpeg";
+import Shop from "../Shop/Shop";
 
-function Shop() {
-
-
+function TeeShirt() {
 
     return (
-        <div clas="Shop-container">
 
-            <div class="Link-shop-container">
-                <Link to="/" class="nav-shop">
-                    Tee Shirt
-                </Link>
-                <Link to="/" class="nav-shop">
-                    Pull
-                </Link>
-                <Link to="/" class="nav-shop">
-                    Goodies
-                </Link>
-            </div>
+        <div clas="Shop-container">
+            <Shop/>
 
             <div class="box-shop-container">
                 <div class="box-shop">
-                    <img src={logo} className="image-box" alt="logo"/>
+                    <img src={tee_coc} className="image-box" alt="logo"/>
                     <p class="text-shop-box"> Ici on vends des tee-shirt de toutes les tailles car on pèse un max blablablablablfzefjizejfizejizefiàzejiàzefj</p>
                     <p class="price-ts">12 €</p>
 
@@ -66,4 +53,4 @@ function Shop() {
 
 }
 
-export default Shop;
+export default TeeShirt;

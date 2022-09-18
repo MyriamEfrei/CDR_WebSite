@@ -1,0 +1,65 @@
+/** TeeShirt.css **/
+
+.Shop-container{
+    width: 100%;
+}
+
+.nav-shop{
+    text-align: center;
+    text-space: 15px;
+    margin-right: 20px;
+    font-family: "Long Shot";
+}
+
+Link {
+    padding: 50px;
+    margin-right: 100px;
+}
+
+/* BOX */
+.box-shop-container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box-shop{
+    width: 25%;
+    height: 400px;
+    border: 5px #AD9154;
+    box-shadow: rgba(130, 109, 63, 1) 0px 7px 29px 0px;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: grab;
+    display: inline-block;
+    background: #282c34;
+    border-radius: 12%;
+}
+
+.box-shop:hover {
+    background: #AD9154;
+    box-shadow: rgb(56, 47, 40) 0px 7px 29px 0px;
+
+}
+
+.image-box{
+    width: 95%;
+    height: 50%;
+    margin-top: 5%;
+}
+
+.text-shop-box{
+    font-size: 12px;
+    background-size: cover;
+    margin : auto ;
+    padding: 6%;
+    color: white;
+}
+
+.price-ts{
+    font-family: "Long Shot";
+    font-size: 42px;
+    bottom: 0;
+    color: darkred;
+}
