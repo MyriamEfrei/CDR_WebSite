@@ -2,11 +2,26 @@
     width: 100%;
 }
 
+.Link-shop-container{
+    background-color: #AD9154;
+    height: 70px;
+    box-shadow: rgba(143, 86, 124, 0.4) 0px 5px, rgba(137, 176, 81, 0.3) 0px 10px, rgba(97, 239, 26, 0.2) 0px 15px, rgba(138, 137, 61, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
 .nav-shop{
     text-align: center;
-    text-space: 15px;
-    margin-right: 20px;
+    vertical-align: center;
+    text-space: 25px;
+    margin: auto;
     font-family: "Long Shot";
+    display: inline;
+    text-decoration: none;
+    font-size: 30px;
+    color: #282c34;
+}
+
+.nav-shop:hover{
+    color: white;
 }
 
 Link {
@@ -14,46 +29,10 @@ Link {
     margin-right: 100px;
 }
 
-/* BOX */
-.box-shop-container{
-    margin-left: 50px;
-    margin-right: 50px;
+.logo-nav {
+    width: 60px;
+    height: 60px;
+    float: left;
 }
 
-.box-shop{
-    width: 25%;
-    height: 600px;
-    border: 5px #AD9154;
-    box-shadow: rgba(173,145,84,1) 0px 7px 29px 0px;
-    margin-top: 3%;
-    margin-bottom: 6%;
-    margin-left: 50px;
-    margin-right: 50px;
-    cursor: grab;
-    display: inline-block;
-    background: #282c34;
-}
 
-.box-shop:hover {
-    background: #AD9154;
-    box-shadow: rgb(56, 47, 40) 0px 7px 29px 0px;
-
-}
-
-.image-box{
-    width: 80%;
-    height: 200px;
-}
-
-.text-shop-box{
-    font-size: 12px;
-    background-size: cover;
-    margin : auto ;
-    padding: 6%;
-}
-
-.price-ts{
-    font-family: "Long Shot";
-    font-size: 42px;
-    bottom: 0;
-}

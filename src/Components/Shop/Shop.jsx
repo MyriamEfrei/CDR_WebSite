@@ -19,6 +19,7 @@ function Shop() {
         <div clas="Shop-container">
 
             <div class="Link-shop-container">
+                <img src={logo} className="logo-nav" alt="logo"/>
                 <Link to="/TeeShirt" class="nav-shop">
                     Tee Shirt
                 </Link>
@@ -28,8 +29,8 @@ function Shop() {
                 <Link to="/Goodies" class="nav-shop">
                     Goodies
                 </Link>
-            </div>
 
+            </div>
         </div>
 
 
