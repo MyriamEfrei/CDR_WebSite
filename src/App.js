@@ -2,8 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import { BrowserRouter } from 'react-router-dom';
+import Shop from "./Components/Shop/Shop";
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import TeeShirt from "./Components/Shop/TeeShirt/TeeShirt";
+import Goodies from "./Components/Shop/Goodies/Goodies";
 
+/**
 function App() {
   return (
       <div class="App">
@@ -13,6 +17,23 @@ function App() {
       <Footer />
       </div>
   );
+}
+**/
+
+function App() {
+    return (
+        <div class="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Header />} />
+                    <Route path="/Shop" element={<Shop />} />
+                    <Route path="/TeeShirt" element={<TeeShirt />} />
+                    <Route path="/Goodies" element={<Goodies />} />
+
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

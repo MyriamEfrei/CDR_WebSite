@@ -17,8 +17,8 @@ function Header() {
             </div>
 
             <div className="wrap">
-                <button className="button">Boutique</button>
-                <button className="button">Actus</button>
+                <a href="/Shop"><button className="button">Boutique</button></a>
+                <a href="/Shop"><button className="button">Actus</button></a>
 
             </div>
 

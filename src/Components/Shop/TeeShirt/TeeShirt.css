@@ -23,14 +23,14 @@ Link {
 }
 
 .box-shop{
-    width: 25%;
-    height: 400px;
+    width: 26%;
+    height: 600px;
     border: 5px #AD9154;
     box-shadow: rgba(130, 109, 63, 1) 0px 7px 29px 0px;
     margin-top: 3%;
     margin-bottom: 6%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
     cursor: grab;
     display: inline-block;
     background: #282c34;

@@ -1,9 +1,8 @@
-import "./Tee-shirt.css";
-import Footer from "../Footer/Footer";
+import "./TeeShirt.css";
+import Footer from "../../Footer/Footer";
 import {Link} from "react-router-dom";
-import logo from "../Assets/LogoDiscord.png";
-import tee_coc from "./pull-coc.jpeg";
-import Shop from "../Shop/Shop";
+import logo from "../../Assets/LogoDiscord.png";
+import Shop from "../Shop";
 
 function TeeShirt() {
 
@@ -14,7 +13,7 @@ function TeeShirt() {
 
             <div class="box-shop-container">
                 <div class="box-shop">
-                    <img src={tee_coc} className="image-box" alt="logo"/>
+                    <img src={logo} className="image-box" alt="logo"/>
                     <p class="text-shop-box"> Ici on vends des tee-shirt de toutes les tailles car on pèse un max blablablablablfzefjizejfizejizefiàzejiàzefj</p>
                     <p class="price-ts">12 €</p>
 
