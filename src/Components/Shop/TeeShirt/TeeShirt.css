@@ -35,11 +35,12 @@ Link {
     display: inline-block;
     background: #282c34;
     border-radius: 12%;
+    transition: all 0.2s ease-in-out;
 }
 
 .box-shop:hover {
-    background: #AD9154;
-    box-shadow: rgb(56, 47, 40) 0px 7px 29px 0px;
+    background: #535359;
+    box-shadow: rgb(255, 0, 0) 5px 15px 41px 5px;
 
 }
 

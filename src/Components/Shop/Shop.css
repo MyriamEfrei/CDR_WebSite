@@ -3,20 +3,18 @@
 }
 
 .Link-shop-container{
+    padding: 40px;
     background-color: #AD9154;
-    height: 70px;
-    box-shadow: rgba(143, 86, 124, 0.4) 0px 5px, rgba(137, 176, 81, 0.3) 0px 10px, rgba(97, 239, 26, 0.2) 0px 15px, rgba(138, 137, 61, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    height: 40px;
+    text-align: center;
+    box-shadow: rgb(169, 145, 83) 0px 5px, rgb(189, 157, 92) 0px 10px, rgb(213, 175, 103) 0px 15px, rgb(232, 194, 112) 0px 20px, rgb(0, 0, 0) 0px 22px;
 }
 
+
 .nav-shop{
-    text-align: center;
-    vertical-align: center;
-    text-space: 25px;
-    margin: auto;
     font-family: "Long Shot";
-    display: inline;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     color: #282c34;
 }
 
@@ -24,15 +22,52 @@
     color: white;
 }
 
-Link {
-    padding: 50px;
-    margin-right: 100px;
+.logo-nav {
+    width: 70px;
+    height: 70px;
+}
+/*
+a.nav-shop{
+    margin : auto 100px;
+}
+*/
+
+a.nav-shop {
+    margin : auto 100px;
+    background-image: linear-gradient(
+            to right,
+            #ffffff,
+            #000000 80%,
+            #000000 110%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
-.logo-nav {
-    width: 60px;
-    height: 60px;
-    float: left;
+a.nav-shop:before {
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+a.nav-shop:hover {
+    background-position: 0;
+}
+
+a.nav-shop::before {
+    width:100%;
 }
 
 
