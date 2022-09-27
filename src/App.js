@@ -6,6 +6,7 @@ import Shop from "./Components/Shop/Shop";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import TeeShirt from "./Components/Shop/TeeShirt/TeeShirt";
 import Goodies from "./Components/Shop/Goodies/Goodies";
+import AboutUs from "./Components/About us/AboutUs";
 
 /**
 function App() {
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/Shop" element={<Shop />} />
                     <Route path="/TeeShirt" element={<TeeShirt />} />
                     <Route path="/Goodies" element={<Goodies />} />
+                    <Route path="/AboutUs" element={<AboutUs />} />
 
                 </Routes>
             </BrowserRouter>

@@ -1,6 +1,7 @@
 import "./Footer.css";
 import logoCDR from "../Assets/LogoDiscord.png";
 //import { link } from 'react-router-dom';
+import AboutUs from "../About us/AboutUs";
 
 function Footer(){
 
@@ -34,7 +35,7 @@ function Footer(){
                             <li>Accueil</li>
                             <li>Nos produits</li>
                             <li>Nos services</li>
-                            <li>A propos</li>
+                            <a href="/AboutUs"><li>A propos</li></a>
                             <li>Contact</li>
                         </ul>
                     </div>
