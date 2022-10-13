@@ -6,7 +6,7 @@
 .container_h {
     padding: 10px;
     background-image: url("../Assets/Decoration_-_PNG.png");
-    height: 800px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,8 +15,12 @@
 .title {
     font-family: var(--font-main);
     padding: 5px;
-    font-size: 50px;
+    font-size: 60px;
     word-spacing: 1rem;
+    float:right;
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 7%;
 }
 
 .title_container_cd {
@@ -25,8 +29,10 @@
 }
 
 .logo_h {
-    width: 225px;
-    height: 225px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 12%;
 }
 
 /* ---------- Button ---------- */
@@ -34,7 +40,7 @@
     min-width: 250px;
     min-height: 250px;
     font-family: 'Long Shot', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     text-transform: uppercase;
     letter-spacing: 1.7px;
     font-weight: 600;
@@ -52,7 +58,7 @@
     margin-bottom: 100px;
     margin-left : 350px;
     margin-right: 350px;
-;
+    margin-top:6%;
 }
 
 button::before {

@@ -21,7 +21,13 @@ function Shop() {
 
 
             <div class="Link-shop-container">
-                <img className="logo_header_shop" src={logo} alt="logo"/>
+                <ul>
+                    <li><img className="logo_header_shop" src={logo} alt="logo"/></li>
+                    <li><p>Menue déroulant tkt</p></li>
+                </ul>
+            </div>
+
+            <div>
                 <Link to="/TeeShirt" class="nav-shop">
                     T-SHIRT
                 </Link>
@@ -31,7 +37,6 @@ function Shop() {
                 <Link to="/Goodies" class="nav-shop">
                     GOODIES
                 </Link>
-
             </div>
 
             <img className="logo-shop" src={logo} alt="logo"/>

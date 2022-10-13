@@ -1,26 +1,32 @@
 .Shop-container{
     width: 100%;
+    background-color: #FFF6E3;
 }
 
 .Link-shop-container{
     padding-top : 15px;
     padding-bottom: 10px;
-    background-color: #AD9154;
+    background-color: #667FAD;
     text-align: center;
-    box-shadow: rgb(169, 145, 83) 0px 5px, rgb(189, 157, 92) 0px 10px, rgb(213, 175, 103) 0px 15px, rgb(232, 194, 112) 0px 20px;
+    //box-shadow: rgb(169, 145, 83) 0px 5px, rgb(189, 157, 92) 0px 10px, rgb(213, 175, 103) 0px 15px, rgb(232, 194, 112) 0px 20px;
+}
+li{
+    list-style-type: none;
 }
 
 .logo_header_shop{
     width: 100px;
     height: 100px;
     margin-right: 10%;
+    float: left;
+    margin-left: 10%;
 }
 
 .nav-shop{
     font-family: "Long Shot";
     text-decoration: none;
     font-size: 40px;
-    color: #282c34;
+    color: #667FAD;
 }
 
 .nav-shop:hover{
