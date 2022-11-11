@@ -58,7 +58,7 @@ function Footer(){
                 <div className="rowcopy">
                     <div className="row">
                         <p className="row-sm">
-                            &copy;{new Date().getFullYear()} Nolyuk | All right reserved | Terms Of Service | Privacy
+                            &copy;{new Date().getFullYear()} Nolyuks | All right reserved | Terms Of Service | Privacy
                         </p>
                     </div>
                 </div>

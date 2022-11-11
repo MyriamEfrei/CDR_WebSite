@@ -4,6 +4,7 @@ import logo from "../Assets/LogoDiscord.png";
 
 function Header() {
     return(
+
         <div>
 
             <div class="container_h">
@@ -23,8 +24,8 @@ function Header() {
             </div>
 
             <div className="wrap">
-                <a class="button-header" href="/Shop"><button className="button">Boutique</button></a>
-                <a class="button-header" href="/Shop"><button className="button">Actus</button></a>
+                <a class="button-header" href="/TeeShirt"><button className="buttonBeatifulHeader">Boutique</button></a>
+                <a class="button-header" href="/Shop"><button className="buttonBeatifulHeader">Actus</button></a>
 
             </div>
 
