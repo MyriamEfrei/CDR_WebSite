@@ -1,6 +1,7 @@
 import "./Footer.css";
 import logoCDR from "../Assets/LogoDiscord.png";
 import AboutUs from "../About us/AboutUs";
+import ContactUs from "../ContactUs/ContactUs";
 
 function Footer(){
 
@@ -29,23 +30,23 @@ function Footer(){
                     </div>
 
                     <div className="col">
-                        <h4>Navigation</h4>
+                        <b><h4>Navigation</h4></b>
                         <ul className="list">
-                            <li>Accueil</li>
+                            <a className="hover:text-yellow-300" href="/"><li>Accueil</li></a>
                             <li>Nos produits</li>
                             <li>Nos services</li>
-                            <a href="/AboutUs"><li>A propos</li></a>
-                            <li>Contact</li>
+                            <a className="hover:text-yellow-300" href="/AboutUs"><li>A propos</li></a>
+                            <a className="hover:text-yellow-300"  href="/ContactUs"><li>Contactez nous</li></a>
                         </ul>
                     </div>
 
                     <div className="col">
                         <h4>Produits</h4>
                         <ul className="list">
-                            <li>T-shirts</li>
+                            <a className="hover:text-yellow-300" href="/TeeShirt"><li>T-Shirt</li></a>
                             <li>Casquettes</li>
-                            <li>Pulls</li>
-                            <li>Accessoires</li>
+                            <a className="hover:text-yellow-300" href="/Pull"><li>Pull</li></a>
+                            <a className="hover:text-yellow-300" href="/Goodies"><li>Goodies</li></a>
                             <li>Autres</li>
                         </ul>
                     </div>

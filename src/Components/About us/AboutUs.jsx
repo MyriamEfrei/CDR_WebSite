@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import logo from "../Assets/LogoDiscord.png";
 import ProfileCard from "./profileCard/profileCard";
 import myriam_photo from "./profileCard/asset/AMOR_Myriam.jpg";
+import headerPage from "../Header/HeaderPage";
 
 
 function AboutUs() {

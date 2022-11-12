@@ -7,6 +7,7 @@ import TeeShirt from "./Components/Shop/TeeShirt/TeeShirt";
 import Goodies from "./Components/Shop/Goodies/Goodies";
 import AboutUs from "./Components/About us/AboutUs";
 import Pull from "./Components/Shop/Pull/Pull";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 /**
 function App() {
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/Goodies" element={<Goodies />} />
                     <Route path="/Pull" element={<Pull />} />
                     <Route path="/AboutUs" element={<AboutUs />} />
+                    <Route path="/ContactUs" element={<ContactUs />} />
                 </Routes>
             </BrowserRouter>
         </div>
