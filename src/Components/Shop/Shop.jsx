@@ -1,22 +1,11 @@
 import "./Shop.css";
-import logoCDR from "../Assets/LogoDiscord.png";
-//import { link } from 'react-router-dom';
-import Footer from "../Footer/Footer";
 import {Link} from "react-router-dom";
 import logo from "../Assets/LogoDiscord.png";
 
 function Shop() {
 
-    /**
-    const box = document.querySelector(".box-shop");
-
-    box.addEventListener("mouseup", () => {
-        box.style.background = "red" ;
-    }); **/
-
-
     return (
-        <div className="flex flex-wrap place-items-center ">
+        <div className="flex flex-wrap place-items-center overflow-x-hidden">
             <section className="relative mx-auto">
                 <nav className="flex justify-between bg-gray-900 text-white w-screen">
                     <div className="px-5 xl:px-12 py-6 flex w-full items-center">
@@ -24,11 +13,11 @@ function Shop() {
                             <img className="logo_header_shop" src={logo} alt="logo"/>
                         </a>
 
-                        <ul className="hidden md:flex px-4 mx-auto items-center font-semibold font-heading space-x-12">
+                        <ul className="hidden md:flex px-4 mx-auto items-center font-semibold font-heading space-x-12 ">
                             <div className="Iam">
                                 <b>
                                     <div className="innerIam">
-                                        Coupe des régions<br/>
+                                        <p className="text-sky-300">Coupe des régions</p><br/>
                                         Discord<br/>
                                         Twitch<br/>
                                         Facebook<br/>
@@ -46,7 +35,7 @@ function Shop() {
             <Link to="/TeeShirt" className="w-1/6 h-10 bg-white mt-8 mb-2 m-auto inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-gray-300 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                 T-SHIRT
             </Link>
-            <Link to="/" className="w-1/6 h-10 bg-white mt-8 mb-2  m-auto inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-gray-300 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+            <Link to="/Pull" className="w-1/6 h-10 bg-white mt-8 mb-2  m-auto inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-gray-300 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                 PULLS
             </Link>
             <Link to="/Goodies" className="w-1/6 h-10 bg-white mt-8 mb-2  m-auto inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-gray-300 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
@@ -54,9 +43,7 @@ function Shop() {
             </Link>
 
         </div>
-
     )
-
 }
 
 export default Shop;

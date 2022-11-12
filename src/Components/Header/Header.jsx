@@ -1,6 +1,5 @@
 import "./Header.css";
 import logo from "../Assets/LogoDiscord.png";
-//import bg_or from "../Assets/orangeBg.png";
 
 function Header() {
     return(
@@ -18,9 +17,6 @@ function Header() {
                         <li><img src={logo} className="logo_h" alt="logo"/></li>
                     </ul>
                 </div>
-
-
-
             </div>
 
             <div className="wrap">

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -7,6 +6,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import TeeShirt from "./Components/Shop/TeeShirt/TeeShirt";
 import Goodies from "./Components/Shop/Goodies/Goodies";
 import AboutUs from "./Components/About us/AboutUs";
+import Pull from "./Components/Shop/Pull/Pull";
 
 /**
 function App() {
@@ -30,8 +30,8 @@ function App() {
                     <Route path="/Shop" element={<Shop />} />
                     <Route path="/TeeShirt" element={<TeeShirt />} />
                     <Route path="/Goodies" element={<Goodies />} />
+                    <Route path="/Pull" element={<Pull />} />
                     <Route path="/AboutUs" element={<AboutUs />} />
-
                 </Routes>
             </BrowserRouter>
         </div>

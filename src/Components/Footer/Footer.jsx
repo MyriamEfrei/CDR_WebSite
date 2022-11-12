@@ -1,6 +1,5 @@
 import "./Footer.css";
 import logoCDR from "../Assets/LogoDiscord.png";
-//import { link } from 'react-router-dom';
 import AboutUs from "../About us/AboutUs";
 
 function Footer(){
@@ -54,13 +53,12 @@ function Footer(){
 
 
                 </div>
-
-                <div className="rowcopy">
-                    <div className="row">
-                        <p className="row-sm">
-                            &copy;{new Date().getFullYear()} Nolyuks | All right reserved | Terms Of Service | Privacy
-                        </p>
-                    </div>
+            </div>
+            <div className="rowcopy">
+                <div className="row">
+                    <p className="row-sm">
+                        &copy;{new Date().getFullYear()} Nolyuks | All right reserved | Terms Of Service | Privacy
+                    </p>
                 </div>
             </div>
         </div>

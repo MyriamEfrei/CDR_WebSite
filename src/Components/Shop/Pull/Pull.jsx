@@ -1,11 +1,10 @@
-import "../TeeShirt/TeeShirt.css"
 import Footer from "../../Footer/Footer";
 import {Link} from "react-router-dom";
 import logo from "../../Assets/LogoDiscord.png";
 import Shop from "../Shop";
-import goodies from "../../Assets/goodies.jpg"
+import pull from "../../Assets/pull.jpg"
 
-function Goodies() {
+function Pull() {
 
     return (
         <div className="Shop-container">
@@ -13,10 +12,10 @@ function Goodies() {
             <div className="flex">
                 <div className="p-20 bg-gray-500 flex-auto w-1/8">
                     <div className="bg-white rounded-lg border-2 border-blue-400 shadow-lg hover:bg-gray-300">
-                        <img  src={goodies} alt="" className="image-box rounded-t-lg"></img>
+                        <img  src={pull} alt="" className="image-box rounded-t-lg"></img>
 
                         <div className="p-6">
-                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a GOODIES from CDR
+                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a PULL from CDR
                             </h2>
                             <p className="text-purple-700 mb-2">You can buy him with a little price !</p>
 
@@ -31,10 +30,10 @@ function Goodies() {
                 <div className="p-20 bg-gray-500 flex-auto w-1/8">
                     <div className="bg-white rounded-lg shadow-lg border-2 border-blue-400 hover:bg-gray-300">
                         <img
-                            src={goodies}
+                            src={pull}
                             alt="" className="image-box rounded-t-lg"></img>
                         <div className="p-6">
-                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a GOODIES from CDR
+                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a PULL from CDR
                             </h2>
                             <p className="text-purple-700 mb-2">You can buy him with a little price !</p>
 
@@ -51,10 +50,10 @@ function Goodies() {
                 <div className="p-20 bg-gray-500 w-1/2">
                     <div className="bg-white rounded-lg shadow-lg border-2 border-blue-400 hover:bg-gray-300">
                         <img
-                            src={goodies}
+                            src={pull}
                             alt="" className="image-box rounded-t-lg"></img>
                         <div className="p-6">
-                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a GOODIES from CDR
+                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a PULL from CDR
                             </h2>
                             <p className="text-purple-700 mb-2">You can buy him with a little price !</p>
 
@@ -69,10 +68,10 @@ function Goodies() {
                 <div className="p-20 bg-gray-500 w-1/2">
                     <div className="bg-white rounded-lg shadow-lg border-2 border-blue-400 hover:bg-gray-300">
                         <img
-                            src={goodies}
+                            src={pull}
                             alt="" className="image-box rounded-t-lg"></img>
                         <div className="p-6">
-                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a GOODIES from CDR
+                            <h2 className="font-bold mb-2 text-2xl text-purple-800">This is a PULL from CDR
                             </h2>
                             <p className="text-purple-700 mb-2">You can buy him with a little price !</p>
 
@@ -92,4 +91,4 @@ function Goodies() {
 
 }
 
-export default Goodies;
+export default Pull;
