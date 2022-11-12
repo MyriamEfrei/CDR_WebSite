@@ -1,0 +1,55 @@
+.france-map path {
+    fill: #eee;
+}
+
+.france-map path:nth-child(1):hover {
+    fill: blueviolet;
+}
+
+.france-map path:nth-child(2):hover {
+    fill: azure;
+}
+
+.france-map path:nth-child(3):hover {
+    fill: darkblue;
+}
+
+.france-map path:nth-child(4):hover {
+    fill: brown;
+}
+
+.france-map path:nth-child(5):hover {
+    fill: red;
+}
+
+.france-map path:nth-child(6):hover {
+    fill: pink;
+}
+
+.france-map path:nth-child(7):hover {
+    fill: indigo;
+}
+
+.france-map path:nth-child(8):hover {
+    fill: navy;
+}
+
+.france-map path:nth-child(9):hover {
+    fill: black;
+}
+
+.france-map path:nth-child(10):hover {
+    fill: white;
+}
+
+.france-map path:nth-child(11):hover {
+    fill: purple;
+}
+
+.france-map path:nth-child(12):hover {
+    fill: green;
+}
+
+.france-map path:nth-child(13):hover {
+    fill: blue;
+}
