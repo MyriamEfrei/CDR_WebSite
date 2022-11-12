@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import TeeShirt from "./Components/Shop/TeeShirt/TeeShirt";
 import Goodies from "./Components/Shop/Goodies/Goodies";
 import AboutUs from "./Components/About us/AboutUs";
+import Map from "./Components/France map/FranceMap";
 
 /**
 function App() {
@@ -23,7 +24,7 @@ function App() {
 
 function App() {
     return (
-        <div class="App">
+        <div className="App">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Header />} />
@@ -31,7 +32,7 @@ function App() {
                     <Route path="/TeeShirt" element={<TeeShirt />} />
                     <Route path="/Goodies" element={<Goodies />} />
                     <Route path="/AboutUs" element={<AboutUs />} />
-
+                    <Route path="/map" element={<Map />} />
                 </Routes>
             </BrowserRouter>
         </div>
