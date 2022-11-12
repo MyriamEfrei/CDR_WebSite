@@ -2,7 +2,7 @@ import BoxRegion from "./Box region";
 
 const ModalRegion = props => {
     const { region, handler } = props;
-    console.log(region);
+
     return (
         <div className="modal">
             <div className="modal-layout"></div>

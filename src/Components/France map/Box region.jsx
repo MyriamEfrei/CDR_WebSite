@@ -2,9 +2,8 @@ import "./FranceMap.css"
 
 const BoxRegion = props => {
     const { region, type } = props
-    console.log(type == undefined);
     return (
-        <div className={`box-region ${type == undefined ? "" : "box-region-modal"}`}>
+        <div className={`box-region ${type === undefined ? "" : "box-region-modal"}`}>
             <h3 className="box-region-title">
                 <span>{ region?.name }</span>
             </h3>
