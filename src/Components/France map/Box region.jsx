@@ -1,16 +1,16 @@
 import "./FranceMap.css"
 
 const BoxRegion = props => {
-    const { region } = props
-    console.log(region);
+    const { region, type } = props
+    console.log(type == undefined);
     return (
-        <div className="box-region">
+        <div className={`box-region ${type == undefined ? "" : "box-region-modal"}`}>
             <h3 className="box-region-title">
-                <span>{ region.name }</span>
+                <span>{ region?.name }</span>
             </h3>
             
             <ul className="palmares">
-                {region.palmares.map((el, index) => (
+                {region?.palmares.map((el, index) => (
                     <li key={index}><span>Saison {index + 1}:</span> {el}</li>
                 ))}
             </ul>
@@ -18,7 +18,7 @@ const BoxRegion = props => {
             <div className="referent">
                 <h5>Référents</h5>
                 <ul className="referent-list">
-                    {region.referent.map((el, index) => (
+                    {region?.referent.map((el, index) => (
                         <li key={ index }>{ el }</li>
                     ))}
                 </ul>

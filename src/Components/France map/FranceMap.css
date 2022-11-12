@@ -26,13 +26,26 @@
 .france-map path:nth-child(13):hover { fill: blue; }
 
 .box-region, .fake-box {
-    width: 300px;
+    width: 300px !important;
+    min-height: 1px;
 }
 
 .box-region {
     border: 1px solid #555;
     border-radius: 20px;
     height: fit-content;
+}
+
+.box-region-modal {
+    border: none;
+    border-radius: 0px;
+}
+
+.modal-content > :first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
 }
 
 .box-region-title {
@@ -74,6 +87,39 @@
 .palmares li span {
     font-weight: normal;
     text-decoration: underline;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 25px;
+    background-color: #4448;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 310px;
+    z-index: 55555;
+}
+
+.modal-content svg {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 @keyframes baselineTextApparition {
