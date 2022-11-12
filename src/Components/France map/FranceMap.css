@@ -1,55 +1,95 @@
+.france-map-container {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
 .france-map path {
     fill: #eee;
 }
 
-.france-map path:nth-child(1):hover {
-    fill: blueviolet;
+.france-map path:nth-child(1):hover { fill: blueviolet; }
+.france-map path:nth-child(2):hover { fill: azure; }
+.france-map path:nth-child(3):hover { fill: darkblue; }
+.france-map path:nth-child(4):hover { fill: brown; }
+.france-map path:nth-child(5):hover { fill: red; }
+.france-map path:nth-child(6):hover { fill: pink; }
+.france-map path:nth-child(7):hover { fill: indigo; }
+.france-map path:nth-child(8):hover { fill: navy; }
+.france-map path:nth-child(9):hover { fill: black; }
+.france-map path:nth-child(10):hover { fill: white; }
+.france-map path:nth-child(11):hover { fill: purple; }
+.france-map path:nth-child(12):hover { fill: green; }
+.france-map path:nth-child(13):hover { fill: blue; }
+
+.box-region, .fake-box {
+    width: 300px;
 }
 
-.france-map path:nth-child(2):hover {
-    fill: azure;
+.box-region {
+    border: 1px solid #555;
+    border-radius: 20px;
+    height: fit-content;
 }
 
-.france-map path:nth-child(3):hover {
-    fill: darkblue;
+.box-region-title {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
 }
 
-.france-map path:nth-child(4):hover {
-    fill: brown;
+.box-region-title span {
+    display: block;
+    transform: translateY(100%);
+    animation: baselineTextApparition 1s linear forwards;
 }
 
-.france-map path:nth-child(5):hover {
-    fill: red;
+:is(.palmares, .referent-list) li {
+    padding: 0;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.france-map path:nth-child(6):hover {
-    fill: pink;
+.palmares {
+    margin: 20px auto;
 }
 
-.france-map path:nth-child(7):hover {
-    fill: indigo;
+.referent h5 {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
 }
 
-.france-map path:nth-child(8):hover {
-    fill: navy;
+.referent-list li {
+    font-weight: normal;
 }
 
-.france-map path:nth-child(9):hover {
-    fill: black;
+.palmares li span {
+    font-weight: normal;
+    text-decoration: underline;
 }
 
-.france-map path:nth-child(10):hover {
-    fill: white;
+@keyframes baselineTextApparition {
+    to {
+        transform: translateY(0);   
+    }
 }
 
-.france-map path:nth-child(11):hover {
-    fill: purple;
+@media all and (max-width: 1000px) {
+    .france-map-container {
+        flex-direction: column;
+    }
 }
 
-.france-map path:nth-child(12):hover {
-    fill: green;
-}
-
-.france-map path:nth-child(13):hover {
-    fill: blue;
+@media all and (max-width: 700px) {    
+    .box-region, .fake-box {
+        display: none;
+    }
 }
