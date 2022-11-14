@@ -1,12 +1,10 @@
 .footer {
-    padding-top: 5em;
     margin: 0 auto;
 }
 .main-footer{
-    padding-top: 1000px;
+    padding-top: 10px;
     color: #fff;
     background-color: #101927;
-    padding-top: 3em;
     position: relative;
     bottom: 0;
 }

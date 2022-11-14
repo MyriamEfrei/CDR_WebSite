@@ -3,7 +3,6 @@ import Footer from "../Footer/Footer";
 import logo from "../Assets/LogoDiscord.png";
 import ProfileCard from "./profileCard/profileCard";
 import myriam_photo from "./profileCard/asset/AMOR_Myriam.jpg";
-import headerPage from "../Header/HeaderPage";
 
 
 function AboutUs() {
@@ -176,6 +175,9 @@ function AboutUs() {
                 <h1 className="float-left ml-4 mt-4 text-5xl font-extrabold dark:text-yellow-500">REMERCIEMENT</h1>
                 <hr className="h-2 my-6 w-full lg:w-1/2 rounded border-0 dark:bg-yellow-500 "></hr>
             </div>
+            <br/>
+            <br/>
+            <Footer/>
         </div>
 
 

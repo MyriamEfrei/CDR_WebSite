@@ -45,8 +45,8 @@
     letter-spacing: 1.7px;
     font-weight: 600;
     color: white;
-    background: #AD9154;
-    background: linear-gradient(90deg,rgb(85 90 21 / 74%) 0%, rgba(233,151,123,1) 140%);
+    background: #181c24;
+    background: linear-gradient(90deg, rgb(82, 93, 128) 0%, rgb(24, 28, 36) 140%);
     border: none;
     border-radius: 1100px;
     box-shadow: 12px 12px 24px rgba(204,209,209,1);
@@ -66,8 +66,8 @@
     border-radius: 1100px;
     min-width: calc(10px + 12px);
     min-height: calc(10px + 12px);
-    border: 6px solid #AD9154;
-    box-shadow: 0 0 20px rgba(233,151,123,1);
+    border: 6px solid #181c24;
+    box-shadow: 0 0 20px rgb(82, 93, 128);
     position: absolute;
     top: 50%;
     left: 50%;
