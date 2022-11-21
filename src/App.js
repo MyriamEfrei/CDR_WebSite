@@ -8,6 +8,7 @@ import Goodies from "./Components/Shop/Goodies/Goodies";
 import AboutUs from "./Components/About us/AboutUs";
 import Pull from "./Components/Shop/Pull/Pull";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Actus from "./Components/Actus/Actus";
 
 /**
 function App() {
@@ -34,6 +35,8 @@ function App() {
                     <Route path="/Pull" element={<Pull />} />
                     <Route path="/AboutUs" element={<AboutUs />} />
                     <Route path="/ContactUs" element={<ContactUs />} />
+                    <Route path="/Actus" element={<Actus />} />
+
                 </Routes>
             </BrowserRouter>
         </div>

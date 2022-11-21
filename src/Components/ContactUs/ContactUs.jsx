@@ -23,6 +23,9 @@ function ContactUs() {
                             <p>Logo</p>
                             <p>Logo</p>
                             <p>Logo</p>
+                            <p>Logo</p>
+                            <p>Logo</p>
+                            <p>Logo</p>
                         </div>
                         </div>
                     </div>

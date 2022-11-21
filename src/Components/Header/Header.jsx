@@ -21,7 +21,7 @@ function Header() {
 
             <div className="wrap">
                 <a class="button-header" href="/TeeShirt"><button className="buttonBeatifulHeader">Boutique</button></a>
-                <a class="button-header" href="/Shop"><button className="buttonBeatifulHeader">Actus</button></a>
+                <a class="button-header" href="/Actus"><button className="buttonBeatifulHeader">Actus</button></a>
 
             </div>
 
